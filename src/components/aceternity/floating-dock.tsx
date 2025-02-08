@@ -5,8 +5,6 @@ import {
   MotionValue,
   motion,
   useMotionValue,
-  useSpring,
-  useTransform,
 } from "framer-motion";
 import Link from "next/link";
 
@@ -86,7 +84,7 @@ const FloatingDockDesktop = ({
       onMouseMove={(e) => mouseX.set(e.pageX)}
       onMouseLeave={() => mouseX.set(Infinity)}
       className={cn(
-        "mx-auto md:hidden flex h-14 gap-7 items-end rounded-2xl px-2 pb-3",
+        "mx-auto md:hidden flex h-14 gap-7 items-end rounded-2xl px-2 pb-2.5",
         className
       )}
     >
